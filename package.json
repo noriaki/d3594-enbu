@@ -1,7 +1,16 @@
 {
   "name": "d3594-enbu",
   "version": "0.1.0",
-  "main": "index.js",
+  "private": true,
+  "engines": {
+    "node": "9.x.x"
+  },
+  "main": "pages/index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
   "repository": "https://github.com/noriaki/d3594-enbu",
   "author": {
     "name": "Noriaki Uchiyama",
