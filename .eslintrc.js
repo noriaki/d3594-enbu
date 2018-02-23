@@ -37,9 +37,15 @@ module.exports = {
     'no-confusing-arrow': ['error', { allowParens: true }],
     'function-paren-newline': 'off',
     'react/jsx-closing-bracket-location': [ 'error', 'after-props' ],
-    'react/jsx-filename-extension': ['error', { extensions: ['.js', '.jsx'] }],
+    'react/jsx-filename-extension': ['error', {
+      extensions: ['.js', '.jsx']
+    }],
     'react/prop-types': 'warn',
     'react/no-did-mount-set-state': 'warn',
-    'import/no-extraneous-dependencies': [ 'error', { dependencies: true } ],
+    'import/no-extraneous-dependencies': ['error', { dependencies: true } ],
+    'jsx-a11y/label-has-for': ['error', {
+      components: ['label'],
+      required: { some: ['id'] },
+    }]
   },
 };
