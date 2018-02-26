@@ -1,8 +1,6 @@
 import chunk from 'lodash.chunk';
 import flatten from 'lodash.flatten';
 
-const trunc = x => (x < 0 ? Math.ceil(x) : Math.floor(x));
-
 const subBG = async (prevImage, nextImage) => {
   const prevImageData = await getImageData(prevImage);
   const nextImageData = await getImageData(nextImage);
@@ -35,7 +33,7 @@ const getImageData = async (image) => {
   return imageData;
 };
 
-const imageDimensions = image => new Promise((resolve) => {
+export const imageDimensions = image => new Promise((resolve) => {
   const img = new Image();
   function onLoadImage() {
     resolve({
